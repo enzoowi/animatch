@@ -4,13 +4,21 @@ const AuthContext = createContext();
 
 export const useAuth = () => useContext(AuthContext);
 
+/** Resolve a stored avatar path to a full URL (matches the same helper in DataContext). */
+const normalizeAvatar = (avatar) => {
+    if (!avatar) return avatar;
+    if (avatar.startsWith('data:') || avatar.startsWith('http')) return avatar;
+    const path = avatar.startsWith('/') ? avatar : `/${avatar}`;
+    return `${process.env.PUBLIC_URL}${path}`;
+};
+
 export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null); // null means not logged in
     const [isAuthenticated, setIsAuthenticated] = useState(false);
 
     // Simulated login/register flow
     const login = (userData) => {
-        setUser(userData);
+        setUser({ ...userData, avatar: normalizeAvatar(userData?.avatar) });
         setIsAuthenticated(true);
     };
 

@@ -15,7 +15,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "cross-env NODE_OPTIONS=\"--no-warnings\" react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -40,6 +40,8 @@
     ]
   },
   "devDependencies": {
+    "cross-env": "^10.1.0",
+    "gh-pages": "^6.3.0",
     "json-server": "^0.17.4"
   }
 }

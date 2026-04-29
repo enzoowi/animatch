@@ -6,6 +6,21 @@ export const useData = () => useContext(DataContext);
 
 const API_URL = 'http://localhost:3030';
 
+/**
+ * Resolve a stored avatar value to a URL the browser can load.
+ * - null / undefined  → returned as-is (components handle the fallback)
+ * - data: URL         → returned as-is (uploaded photo stored as base64)
+ * - http/https URL    → returned as-is (external image)
+ * - relative path     → prefixed with process.env.PUBLIC_URL so it resolves
+ *                       correctly regardless of the app's sub-directory (e.g. /animatch)
+ */
+const normalizeAvatar = (avatar) => {
+    if (!avatar) return avatar;
+    if (avatar.startsWith('data:') || avatar.startsWith('http')) return avatar;
+    const path = avatar.startsWith('/') ? avatar : `/${avatar}`;
+    return `${process.env.PUBLIC_URL}${path}`;
+};
+
 export const DataProvider = ({ children }) => {
     const [users, setUsers] = useState([]);
     const [matches, setMatches] = useState([]);
@@ -50,7 +65,7 @@ export const DataProvider = ({ children }) => {
                     fetch(`${API_URL}/greenFlagScores`).then(res => res.json())
                 ]);
 
-                setUsers(usersRes || []);
+                setUsers((usersRes || []).map(u => ({ ...u, avatar: normalizeAvatar(u.avatar) })));
                 setMatches(matchesRes || []);
                 setMessages(messagesRes || []);
                 setConfessions(confessionsRes || []);

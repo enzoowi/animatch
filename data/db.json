@@ -394,6 +394,14 @@
         "u8"
       ],
       "timestamp": "2026-04-29T07:42:34.389Z"
+    },
+    {
+      "id": "m1777455483137",
+      "users": [
+        "u8",
+        "u5"
+      ],
+      "timestamp": "2026-04-29T09:38:03.137Z"
     }
   ],
   "messages": [
@@ -515,7 +523,7 @@
       "toId": "u1",
       "id": "notif_1777448554389",
       "createdAt": "2026-04-29T07:42:34.389Z",
-      "read": false
+      "read": true
     },
     {
       "type": "match",
@@ -526,6 +534,16 @@
       "id": "notif_1777448554390",
       "createdAt": "2026-04-29T07:42:34.390Z",
       "read": true
+    },
+    {
+      "type": "match",
+      "title": "New Match! 🎉",
+      "body": "You and Liza Soberano have matched!",
+      "fromId": "u5",
+      "toId": "u8",
+      "id": "notif_1777455483138",
+      "createdAt": "2026-04-29T09:38:03.138Z",
+      "read": false
     }
   ],
   "greenFlagScores": [
@@ -672,6 +690,16 @@
       "id": "l_1777448557376",
       "from": "u1",
       "to": "u12"
+    },
+    {
+      "id": "l_1777455482651",
+      "from": "u8",
+      "to": "u3"
+    },
+    {
+      "id": "l_1777455483137",
+      "from": "u8",
+      "to": "u5"
     }
   ]
 }
