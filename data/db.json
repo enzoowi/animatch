@@ -1,0 +1,677 @@
+{
+  "users": [
+    {
+      "id": "admin",
+      "name": "Admin",
+      "email": "admin@dlsl.edu.ph",
+      "role": "admin",
+      "intent": "admin",
+      "avatar": null,
+      "reputationScore": null,
+      "reputationTier": null
+    },
+    {
+      "id": "u1",
+      "name": "Mikha Lim",
+      "email": "mikha_lim@dlsl.edu.ph",
+      "gender": "Female",
+      "age": 20,
+      "course": "BS Computer Science",
+      "year": 3,
+      "bio": "Looking for a coding partner and maybe more. Coffee addict. Late-night study sessions are my jam.",
+      "interests": [
+        "Coding",
+        "Coffee",
+        "Valorant",
+        "Anime"
+      ],
+      "subjects": [
+        "CS301",
+        "CS302",
+        "IT105"
+      ],
+      "gpaGoal": "3.25",
+      "intent": "Serious relationship",
+      "reputationScore": 92,
+      "reputationTier": "Gold",
+      "avatar": "/photos/mikha.jpg"
+    },
+    {
+      "id": "u2",
+      "name": "Daniel Padilla",
+      "email": "daniel_padilla@dlsl.edu.ph",
+      "gender": "Male",
+      "age": 21,
+      "course": "BS Information Technology",
+      "year": 4,
+      "bio": "Almost graduating! Need someone to destress with after thesis.",
+      "interests": [
+        "Basketball",
+        "Gaming",
+        "Music",
+        "Street Food"
+      ],
+      "subjects": [
+        "IT401",
+        "IT402"
+      ],
+      "gpaGoal": "3.50",
+      "intent": "Casual dating",
+      "reputationScore": 78,
+      "reputationTier": "Silver",
+      "avatar": "/photos/daniel.jpg"
+    },
+    {
+      "id": "u3",
+      "name": "Andrea Brillantes",
+      "email": "andrea_brillantes@dlsl.edu.ph",
+      "gender": "Female",
+      "age": 19,
+      "course": "BS Psychology",
+      "year": 2,
+      "bio": "Let us analyze each other 🧠. Looking for a study buddy for our major subjects!",
+      "interests": [
+        "Reading",
+        "Cafes",
+        "Psychology",
+        "Cats"
+      ],
+      "subjects": [
+        "PSY201",
+        "PSY202",
+        "GEN101"
+      ],
+      "gpaGoal": "3.00",
+      "intent": "Study buddy",
+      "reputationScore": 98,
+      "reputationTier": "Elite",
+      "avatar": "/photos/andrea.jpg"
+    },
+    {
+      "id": "u4",
+      "name": "Dwight Ramos",
+      "email": "dwight_ramos@dlsl.edu.ph",
+      "gender": "Male",
+      "age": 22,
+      "course": "BS Engineering",
+      "year": 4,
+      "bio": "Engineering is tough, but it is easier with good company. Looking for a serious connection.",
+      "interests": [
+        "Gadgets",
+        "DIY",
+        "Hiking",
+        "Sci-Fi"
+      ],
+      "subjects": [
+        "ENG401",
+        "ENG402",
+        "PHY201"
+      ],
+      "gpaGoal": "3.50",
+      "intent": "Serious relationship",
+      "reputationScore": 82,
+      "reputationTier": "Silver",
+      "avatar": "/photos/dwight.jpg"
+    },
+    {
+      "id": "u5",
+      "name": "Liza Soberano",
+      "email": "liza_soberano@dlsl.edu.ph",
+      "gender": "Female",
+      "age": 18,
+      "course": "BS Multimedia Arts",
+      "year": 1,
+      "bio": "Freshman exploring the campus life! Hit me up if you want to go to school events together.",
+      "interests": [
+        "Art",
+        "Photography",
+        "Fashion",
+        "Concerts"
+      ],
+      "subjects": [
+        "MMA101",
+        "MMA102",
+        "ART101"
+      ],
+      "gpaGoal": "3.00",
+      "intent": "Event companion",
+      "reputationScore": 65,
+      "reputationTier": "Bronze",
+      "avatar": "/photos/liza.jpg"
+    },
+    {
+      "id": "u6",
+      "name": "Joshua Garcia",
+      "email": "joshua_garcia@dlsl.edu.ph",
+      "gender": "Male",
+      "age": 20,
+      "course": "BS Computer Science",
+      "year": 3,
+      "bio": "Algorithm enthusiast. Let us solve LeetCode problems or grab lunch.",
+      "interests": [
+        "Algorithms",
+        "Chess",
+        "Tech Podcasts",
+        "Cooking"
+      ],
+      "subjects": [
+        "CS301",
+        "CS302",
+        "MATH201"
+      ],
+      "gpaGoal": "3.25",
+      "intent": "Study buddy",
+      "reputationScore": 88,
+      "reputationTier": "Gold",
+      "avatar": "/photos/joshua.jpg"
+    },
+    {
+      "id": "u7",
+      "name": "Sabrina Carpenter",
+      "email": "sabrina_carpenter@dlsl.edu.ph",
+      "gender": "Female",
+      "age": 21,
+      "course": "BS Nursing",
+      "year": 3,
+      "bio": "Tired nursing student. Looking for someone genuine and understanding of crazy schedules.",
+      "interests": [
+        "Movies",
+        "Food Trips",
+        "Skincare",
+        "Pop Music"
+      ],
+      "subjects": [
+        "NUR301",
+        "NUR302",
+        "SCI105"
+      ],
+      "gpaGoal": "3.75",
+      "intent": "Serious relationship",
+      "reputationScore": 95,
+      "reputationTier": "Elite",
+      "avatar": "/photos/sabrina.jpg"
+    },
+    {
+      "id": "u8",
+      "name": "Brian Miranda",
+      "email": "brian_miranda@dlsl.edu.ph",
+      "gender": "Male",
+      "age": 21,
+      "course": "BS Information Technology",
+      "year": 3,
+      "bio": "I am a simple man with simple needs. I like long walks on the beach and watching sunsets.",
+      "interests": [
+        "Valorant",
+        "Anime",
+        "Coding",
+        "Gym"
+      ],
+      "subjects": [
+        "IT301",
+        "IT302",
+        "IT105"
+      ],
+      "gpaGoal": "3.50",
+      "intent": "Serious relationship",
+      "reputationScore": 85,
+      "reputationTier": "Gold",
+      "avatar": "/photos/brian.jpg"
+    },
+    {
+      "id": "u9",
+      "name": "Clairo Villanueva",
+      "email": "clairo_villanueva@dlsl.edu.ph",
+      "gender": "Female",
+      "age": 20,
+      "course": "BS Biology",
+      "year": 3,
+      "bio": "Pre-med life. I spend 90% of my time in the library. Come join me?",
+      "interests": [
+        "Science",
+        "Volunteering",
+        "Baking",
+        "Nature"
+      ],
+      "subjects": [
+        "BIO301",
+        "BIO302",
+        "CHE201"
+      ],
+      "gpaGoal": "3.25",
+      "intent": "Study buddy",
+      "reputationScore": 91,
+      "reputationTier": "Gold",
+      "avatar": "/photos/clairo.jpg"
+    },
+    {
+      "id": "u10",
+      "name": "Donny Pangilinan",
+      "email": "donny_pangilinan@dlsl.edu.ph",
+      "gender": "Male",
+      "age": 19,
+      "course": "BS Business Administration",
+      "year": 2,
+      "bio": "Future CEO. Let us network and chill. Up for casual dates.",
+      "interests": [
+        "Business",
+        "Investing",
+        "Parties",
+        "Cars"
+      ],
+      "subjects": [
+        "BUS201",
+        "BUS202",
+        "MKT101"
+      ],
+      "gpaGoal": "3.00",
+      "intent": "Casual dating",
+      "reputationScore": 60,
+      "reputationTier": "Bronze",
+      "avatar": "/photos/donny.jpg"
+    },
+    {
+      "id": "u11",
+      "name": "Sara Duterte",
+      "email": "sara_duterte@dlsl.edu.ph",
+      "gender": "Female",
+      "age": 18,
+      "course": "BS Tourism",
+      "year": 1,
+      "bio": "Wanderlust! Let us explore Lipa and nearby cafes together.",
+      "interests": [
+        "Travel",
+        "Food Blogging",
+        "Languages",
+        "Vlogging"
+      ],
+      "subjects": [
+        "TOU101",
+        "TOU102",
+        "HIS101"
+      ],
+      "gpaGoal": "3.75",
+      "intent": "Event companion",
+      "reputationScore": 70,
+      "reputationTier": "Silver",
+      "avatar": "/photos/sara.jpg"
+    },
+    {
+      "id": "u12",
+      "name": "Marlon Perez",
+      "email": "marlon_perez@dlsl.edu.ph",
+      "gender": "Male",
+      "age": 21,
+      "course": "BS Information Technology",
+      "year": 3,
+      "bio": "Quiet but I promise I pull my weight in group works. Looking for a study buddy and maybe a late-night gamer.",
+      "interests": [
+        "Gaming",
+        "Anime",
+        "Manga",
+        "Keyboards"
+      ],
+      "subjects": [
+        "IT301",
+        "IT302",
+        "IT105"
+      ],
+      "gpaGoal": "3.50",
+      "intent": "Study buddy",
+      "reputationScore": 89,
+      "reputationTier": "Gold",
+      "avatar": "/photos/marlon.jpg"
+    }
+  ],
+  "matches": [
+    {
+      "id": "m1774685802866",
+      "users": [
+        "u2",
+        "u1"
+      ],
+      "timestamp": "2026-03-28T08:16:42.866Z"
+    },
+    {
+      "id": "m1774685842786",
+      "users": [
+        "u2",
+        "u3"
+      ],
+      "timestamp": "2026-03-28T08:17:22.786Z"
+    },
+    {
+      "id": "m1774686295463",
+      "users": [
+        "u5",
+        "u2"
+      ],
+      "timestamp": "2026-03-28T08:24:55.463Z"
+    },
+    {
+      "id": "m1774686295464",
+      "users": [
+        "u5",
+        "u2"
+      ],
+      "timestamp": "2026-03-28T08:24:55.464Z"
+    },
+    {
+      "id": "m1777441596150",
+      "users": [
+        "u7",
+        "u2"
+      ],
+      "timestamp": "2026-04-29T05:46:36.150Z"
+    },
+    {
+      "id": "m1777441599612",
+      "users": [
+        "u7",
+        "u8"
+      ],
+      "timestamp": "2026-04-29T05:46:39.612Z"
+    },
+    {
+      "id": "m1777441601252",
+      "users": [
+        "u7",
+        "u10"
+      ],
+      "timestamp": "2026-04-29T05:46:41.252Z"
+    },
+    {
+      "id": "m1777441602919",
+      "users": [
+        "u7",
+        "u12"
+      ],
+      "timestamp": "2026-04-29T05:46:42.919Z"
+    },
+    {
+      "id": "m1777448554389",
+      "users": [
+        "u1",
+        "u8"
+      ],
+      "timestamp": "2026-04-29T07:42:34.389Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg1774689075465",
+      "matchId": "m1774689020814",
+      "senderId": "u7",
+      "text": "JSON HELLO",
+      "timestamp": "2026-03-28T09:11:15.465Z",
+      "read": false
+    }
+  ],
+  "confessions": [],
+  "reports": [],
+  "studyRequests": [
+    {
+      "id": "sr1",
+      "fromId": "u6",
+      "toId": "u8",
+      "subject": "CS302",
+      "studyType": "Quiz Review",
+      "location": "Library",
+      "date": "2026-03-10",
+      "time": "14:00",
+      "duration": 90,
+      "message": "Hey! Want to review for the upcoming CS302 quiz together?",
+      "status": "pending",
+      "createdAt": "2026-03-07T00:15:00.000Z",
+      "rescheduleProposal": null
+    },
+    {
+      "id": "sr2",
+      "fromId": "u1",
+      "toId": "u8",
+      "subject": "IT105",
+      "studyType": "Group Discussion",
+      "location": "Café Near Campus",
+      "date": "2026-03-08",
+      "time": "10:00",
+      "duration": 60,
+      "message": "IT105 midterms prep? We share the same subject 📚",
+      "status": "accepted",
+      "createdAt": "2026-03-06T20:00:00.000Z",
+      "rescheduleProposal": null
+    },
+    {
+      "id": "sr_custom_id",
+      "fromId": "u1",
+      "toId": "u2",
+      "subject": "MATH101",
+      "studyType": "Peer Tutoring",
+      "location": "College Library",
+      "date": "2026-04-05",
+      "time": "13:00",
+      "duration": 120,
+      "message": "Let's master Calculus together!",
+      "status": "pending",
+      "createdAt": "2026-03-28T16:48:00.000Z",
+      "rescheduleProposal": null
+    }
+  ],
+  "studySessions": [
+    {
+      "id": "ss1",
+      "requestId": "sr2",
+      "participants": [
+        "u1",
+        "u8"
+      ],
+      "subject": "IT105",
+      "studyType": "Group Discussion",
+      "location": "Café Near Campus",
+      "scheduledAt": "2026-03-08T10:00:00.000Z",
+      "duration": 60,
+      "feedbackSubmitted": [
+        "u1",
+        "u8"
+      ]
+    },
+    {
+      "id": "ss_1774686295462",
+      "requestId": "sr_1774686250525",
+      "participants": [
+        "u5",
+        "u2"
+      ],
+      "subject": "DSO",
+      "studyType": "Quiz Review",
+      "location": "Library",
+      "scheduledAt": "2026-03-28T16:24:00.000Z",
+      "duration": 60,
+      "feedbackSubmitted": []
+    }
+  ],
+  "studyFeedback": [
+    {
+      "id": "fb_1774682209121",
+      "sessionId": "ss1",
+      "raterId": "u1",
+      "productivity": 2,
+      "partnerComm": 2,
+      "timestamp": "2026-03-28T07:16:49.121Z"
+    },
+    {
+      "id": "fb_1777449774942",
+      "sessionId": "ss1",
+      "raterId": "u8",
+      "productivity": 3,
+      "partnerComm": 3,
+      "timestamp": "2026-04-29T08:02:54.942Z"
+    }
+  ],
+  "notifications": [
+    {
+      "type": "match",
+      "title": "New Match! 🎉",
+      "body": "You and Brian Miranda have matched!",
+      "fromId": "u8",
+      "toId": "u1",
+      "id": "notif_1777448554389",
+      "createdAt": "2026-04-29T07:42:34.389Z",
+      "read": false
+    },
+    {
+      "type": "match",
+      "title": "New Match! 🎉",
+      "body": "You and Mikha Lim have matched!",
+      "fromId": "u1",
+      "toId": "u8",
+      "id": "notif_1777448554390",
+      "createdAt": "2026-04-29T07:42:34.390Z",
+      "read": true
+    }
+  ],
+  "greenFlagScores": [
+    {
+      "id": "u1",
+      "score": 97,
+      "sessions": 6,
+      "label": "Top-Rated Partner"
+    },
+    {
+      "id": "u2",
+      "score": 72,
+      "sessions": 3,
+      "label": "Reliable"
+    },
+    {
+      "id": "u3",
+      "score": 98,
+      "sessions": 8,
+      "label": "Top-Rated Partner"
+    },
+    {
+      "id": "u4",
+      "score": 80,
+      "sessions": 4,
+      "label": "Reliable"
+    },
+    {
+      "id": "u5",
+      "score": 60,
+      "sessions": 1,
+      "label": "New"
+    },
+    {
+      "id": "u6",
+      "score": 88,
+      "sessions": 6,
+      "label": "Excellent Study Partner"
+    },
+    {
+      "id": "u7",
+      "score": 95,
+      "sessions": 7,
+      "label": "Top-Rated Partner"
+    },
+    {
+      "id": "u8",
+      "score": 77,
+      "sessions": 5,
+      "label": "Excellent Study Partner"
+    },
+    {
+      "id": "u9",
+      "score": 91,
+      "sessions": 5,
+      "label": "Excellent Study Partner"
+    },
+    {
+      "id": "u10",
+      "score": 60,
+      "sessions": 2,
+      "label": "New"
+    },
+    {
+      "id": "u11",
+      "score": 70,
+      "sessions": 2,
+      "label": "Reliable"
+    },
+    {
+      "id": "u12",
+      "score": 89,
+      "sessions": 5,
+      "label": "Excellent Study Partner"
+    }
+  ],
+  "likes": [
+    {
+      "id": "l_1774682221985",
+      "from": "u1",
+      "to": "u2"
+    },
+    {
+      "id": "l_1774685802864",
+      "from": "u2",
+      "to": "u1"
+    },
+    {
+      "id": "l_1774685842785",
+      "from": "u2",
+      "to": "u3"
+    },
+    {
+      "id": "l_1777441596150",
+      "from": "u7",
+      "to": "u2"
+    },
+    {
+      "id": "l_1777441597796",
+      "from": "u7",
+      "to": "u4"
+    },
+    {
+      "id": "l_1777441598914",
+      "from": "u7",
+      "to": "u6"
+    },
+    {
+      "id": "l_1777441599611",
+      "from": "u7",
+      "to": "u8"
+    },
+    {
+      "id": "l_1777441601251",
+      "from": "u7",
+      "to": "u10"
+    },
+    {
+      "id": "l_1777441602918",
+      "from": "u7",
+      "to": "u12"
+    },
+    {
+      "id": "l_1777448553382",
+      "from": "u1",
+      "to": "u4"
+    },
+    {
+      "id": "l_1777448553752",
+      "from": "u1",
+      "to": "u6"
+    },
+    {
+      "id": "l_1777448554389",
+      "from": "u1",
+      "to": "u8"
+    },
+    {
+      "id": "l_1777448556271",
+      "from": "u1",
+      "to": "u10"
+    },
+    {
+      "id": "l_1777448557376",
+      "from": "u1",
+      "to": "u12"
+    }
+  ]
+}

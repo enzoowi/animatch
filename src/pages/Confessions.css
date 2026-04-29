@@ -1,0 +1,166 @@
+.confessions-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.confessions-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.confessions-header h1 {
+    color: var(--primary-green);
+    font-size: 28px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.confessions-header p {
+    color: var(--text-secondary);
+    font-size: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.confession-card {
+    background-color: var(--card-bg);
+    padding: 32px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+    margin-bottom: 40px;
+}
+
+.confession-card h3 {
+    margin-bottom: 20px;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 12px;
+}
+
+.status-message {
+    padding: 16px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.status-message.sent {
+    background-color: var(--light-green);
+    color: var(--secondary-green);
+}
+
+.status-message.mutual {
+    background-color: #FCE4EC;
+    /* Soft pink */
+    color: #C2185B;
+}
+
+.confession-form .form-group select {
+    width: 100%;
+    padding: 14px;
+}
+
+.submit-confession {
+    width: 100%;
+    margin-top: 16px;
+    font-size: 16px;
+    padding: 16px;
+}
+
+.mutual-confessions-area h3 {
+    color: var(--text-primary);
+    margin-bottom: 16px;
+}
+
+.mutual-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+.mutual-card {
+    background-color: var(--card-bg);
+    padding: 24px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    text-align: center;
+    border: 2px solid #F8BBD0;
+}
+
+.mutual-avatar-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.mutual-avatar-group img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--card-bg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.heart-icon {
+    font-size: 24px;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.empty-state.mini {
+    background-color: var(--card-bg);
+    padding: 32px;
+    border-radius: var(--radius-md);
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+/* ── Mutual Confession Message Button ── */
+.mutual-message-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #ec4899, #f43f5e);
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 14px rgba(236, 72, 153, 0.3);
+}
+
+.mutual-message-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(236, 72, 153, 0.4);
+    background: linear-gradient(135deg, #db2777, #e11d48);
+}
+
+.mutual-message-btn:active {
+    transform: translateY(0);
+}

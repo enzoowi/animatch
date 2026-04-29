@@ -1,0 +1,82 @@
+.report-modal {
+    background-color: var(--card-bg);
+    padding: 32px;
+    border-radius: var(--radius-lg);
+    width: 90%;
+    max-width: 480px;
+    box-shadow: var(--shadow-hover);
+    animation: popIn 0.2s ease-out;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 16px;
+}
+
+.modal-header h2 {
+    color: var(--danger-red);
+    font-size: 20px;
+    margin: 0;
+}
+
+.close-btn {
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: 20px;
+    padding: 4px;
+}
+
+.close-btn:hover {
+    color: var(--text-primary);
+}
+
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    margin-top: 8px;
+    font-family: inherit;
+}
+
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--danger-red);
+    outline: none;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.modal-actions .action-btn {
+    padding: 10px 24px;
+}
+
+.modal-actions .cancel {
+    background-color: #F8FBF8;
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+}
+
+.modal-actions .submit {
+    background-color: var(--danger-red);
+    color: white;
+}
+
+.modal-actions .submit:hover:not(:disabled) {
+    background-color: #B71C1C;
+}
+
+.modal-actions .submit:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

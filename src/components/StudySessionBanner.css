@@ -1,0 +1,154 @@
+.ss-banner {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--card-bg);
+}
+
+.ss-confirmed {
+    background-color: #E3F2FD;
+    border-bottom: 1px solid #BBDEFB;
+}
+
+.ss-actionable {
+    background-color: #FFF8E1;
+    border-bottom: 1px solid #FFECB3;
+}
+
+.ss-waiting {
+    background-color: #F8FAFC;
+    opacity: 0.8;
+}
+
+.ss-banner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.ss-banner-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.ss-banner-title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #1565C0;
+}
+
+.ss-pending-title {
+    color: #F57C00;
+}
+
+.ss-banner-info {
+    font-size: 14px;
+    color: var(--text-primary);
+}
+
+.ss-banner-meta {
+    font-size: 12px;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.ss-banner-msg {
+    font-size: 12px;
+    font-style: italic;
+    color: var(--text-secondary);
+    margin-top: 4px;
+}
+
+.ss-banner-countdown {
+    font-weight: 700;
+    font-size: 14px;
+    color: #1565C0;
+    background: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(21, 101, 192, 0.15);
+}
+
+.ss-banner-status {
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.ss-banner-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ss-action-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: var(--radius-sm);
+    border: none;
+    cursor: pointer;
+    transition: all 0.18s;
+}
+
+.ss-accept {
+    background-color: var(--primary-green);
+    color: white;
+}
+
+.ss-accept:hover {
+    background-color: var(--secondary-green);
+}
+
+.ss-reschedule {
+    background-color: white;
+    color: #1565C0;
+    border: 1px solid #1565C0;
+}
+
+.ss-reschedule:hover {
+    background-color: #E3F2FD;
+}
+
+.ss-decline {
+    background-color: transparent;
+    color: var(--danger-red);
+    text-decoration: underline;
+}
+
+.ss-decline:hover {
+    color: #B91C1C;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .ss-banner-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ss-banner-actions {
+        flex-direction: row;
+        width: 100%;
+        margin-top: 8px;
+        flex-wrap: wrap;
+    }
+
+    .ss-action-btn {
+        flex: 1;
+        justify-content: center;
+    }
+}

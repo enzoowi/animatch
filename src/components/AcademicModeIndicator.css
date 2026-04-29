@@ -1,0 +1,20 @@
+.academic-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #E3F2FD;
+    color: #1565C0;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(21, 101, 192, 0.1);
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.academic-pill-icon {
+    margin-top: -1px;
+}

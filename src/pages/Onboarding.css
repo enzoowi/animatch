@@ -1,0 +1,337 @@
+.onboarding-page {
+    min-height: 100vh;
+    background: var(--bg-color);
+}
+
+.onboarding-header {
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.onboarding-header-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px 24px;
+}
+
+.onboarding-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.onboarding-mark {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    background: var(--primary-green);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.onboarding-brand-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.onboarding-progress {
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.onboarding-progress-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px 24px;
+}
+
+.onboarding-progress-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+}
+
+.onboarding-progress-track {
+    width: 100%;
+    height: 8px;
+    background: var(--bg-color);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.onboarding-progress-bar {
+    height: 8px;
+    background: var(--primary-green);
+    border-radius: 999px;
+    transition: width 0.25s ease;
+}
+
+.onboarding-content {
+    padding: 48px 24px;
+}
+
+.onboarding-card {
+    max-width: 640px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.onboarding-card h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    margin-bottom: 22px;
+    font-size: 14px;
+}
+
+.intent-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.intent-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 16px;
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.intent-option:hover {
+    border-color: var(--primary-green);
+}
+
+.intent-option.selected {
+    border-color: var(--primary-green);
+    background: var(--light-green);
+}
+
+.intent-option input {
+    margin-top: 4px;
+}
+
+.intent-option-title {
+    margin: 0;
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.intent-option-desc {
+    margin: 2px 0 0;
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.error-text {
+    color: var(--danger-red);
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.field label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.field input,
+.field select,
+.field textarea {
+    padding: 12px 14px;
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    outline: none;
+    font-size: 15px;
+    background: var(--card-bg);
+}
+
+.field textarea {
+    resize: vertical;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 2px rgba(26, 122, 74, 0.12);
+}
+
+.help-text {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-top: 2px;
+}
+
+.onboarding-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.btn-outline {
+    padding: 14px 16px;
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--border-color);
+    background: transparent;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.btn-outline:hover {
+    border-color: var(--primary-green);
+    color: var(--primary-green);
+}
+
+.btn-wide {
+    flex: 1;
+}
+
+.primary-btn:disabled {
+    background-color: var(--border-color);
+    color: var(--text-secondary);
+    cursor: not-allowed;
+}
+
+/* ── Tag pill UI ── */
+.tag-input-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    background: var(--card-bg);
+    min-height: 46px;
+    transition: border-color 0.2s;
+}
+
+.tag-input-row:focus-within {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 2px rgba(26, 122, 74, 0.12);
+}
+
+.tag-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    background: var(--light-green);
+    color: var(--primary-green);
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.tag-remove {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: var(--primary-green);
+    font-size: 15px;
+    line-height: 1;
+    opacity: 0.7;
+}
+
+.tag-remove:hover {
+    opacity: 1;
+}
+
+.tag-add-row {
+    display: flex;
+    align-items: stretch;
+    gap: 6px;
+    flex: 1;
+    min-width: 120px;
+}
+
+.tag-input {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 14px;
+    background: transparent;
+    flex: 1;
+    min-width: 80px;
+    height: auto;
+    align-self: stretch;
+    display: block;
+}
+
+.tag-plus-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-green);
+    background: transparent;
+    color: var(--primary-green);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: background 0.18s, color 0.18s;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.tag-plus-btn:hover {
+    background: var(--primary-green);
+    color: #fff;
+}
+
+/* ── Study-Date section divider ── */
+.study-date-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 6px 0 14px;
+}
+
+.study-date-divider {
+    flex: 1;
+    border: none;
+    border-top: 1px solid var(--border-color);
+}
+
+.study-date-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+}

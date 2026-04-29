@@ -1,0 +1,428 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.mode-toggle {
+    display: flex;
+    background-color: var(--card-bg);
+    padding: 6px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+    align-self: center;
+    margin-bottom: 24px;
+}
+
+.toggle-btn {
+    padding: 10px 24px;
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    font-weight: 600;
+    transition: all 0.2s;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.toggle-btn.active {
+    background-color: var(--light-green);
+    color: var(--primary-green);
+}
+
+.dashboard-container.academic .toggle-btn.active {
+    background-color: #E3F2FD;
+    /* Soft blue for academic */
+    color: #1565C0;
+}
+
+.cards-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.profile-card {
+    background-color: var(--card-bg);
+    width: 100%;
+    max-width: 480px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-hover);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-image-container {
+    position: relative;
+    height: 360px;
+    width: 100%;
+    background-color: var(--border-color);
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rep-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--warning-yellow);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    padding: 24px;
+    flex: 1;
+}
+
+.profile-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.profile-header-row h2 {
+    font-size: 24px;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.course-badge {
+    font-size: 13px;
+    color: var(--primary-green);
+    background-color: var(--light-green);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.profile-intent {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.profile-intent strong {
+    color: var(--text-primary);
+}
+
+.report-icon-btn {
+    background: #FEE2E2;
+    border-radius: 999px;
+    padding: 6px 10px;
+    border: 1px solid var(--danger-red);
+    color: var(--danger-red);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.report-icon-btn:hover {
+    background: #FCA5A5;
+}
+
+.academic-highlights {
+    background-color: #F8FAFC;
+    border-left: 3px solid #1565C0;
+    padding: 16px;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.highlight {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.highlight>span {
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.bio-section {
+    font-size: 15px;
+    color: var(--text-primary);
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.interests-section {
+    margin-bottom: 16px;
+}
+
+.interests-section>span {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 13px;
+    color: var(--text-primary);
+}
+
+.tag.subject {
+    background-color: var(--light-green);
+    border-color: var(--light-green);
+    color: var(--primary-green);
+}
+
+.tag.subject.match {
+    background-color: #E3F2FD;
+    color: #1565C0;
+    border-color: #E3F2FD;
+}
+
+.additional-photos-section {
+    margin-top: 16px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 16px;
+}
+
+.additional-photos-section > span {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.additional-photos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.additional-photo-thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+}
+
+.action-buttons {
+    display: flex;
+    padding: 20px 24px;
+    gap: 16px;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+}
+
+.action-btn {
+    flex: 1;
+    padding: 16px 0;
+    border-radius: var(--radius-md);
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.action-btn.pass {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+.action-btn.pass:hover {
+    background-color: rgba(211, 47, 47, 0.05);
+    color: var(--danger-red);
+    border-color: var(--danger-red);
+}
+
+.action-btn.like {
+    background-color: var(--primary-green);
+    color: white;
+    box-shadow: var(--shadow-soft);
+}
+
+.action-btn.like:hover {
+    background-color: var(--secondary-green);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+.dashboard-container.academic .action-btn.like {
+    background-color: #1565C0;
+}
+
+.dashboard-container.academic .action-btn.like:hover {
+    background-color: #0D47A1;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-secondary);
+}
+
+.empty-state h3 {
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+/* Modal specific */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+}
+
+.match-modal {
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: var(--shadow-hover);
+    animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.match-modal h2 {
+    color: var(--primary-green);
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.match-icon {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.match-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.match-images img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--light-green);
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ── Clickable image ── */
+.clickable-image {
+    cursor: zoom-in;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.clickable-image:hover {
+    transform: scale(1.02);
+    filter: brightness(0.92);
+}
+
+/* ── Lightbox overlay ── */
+.lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    backdrop-filter: blur(6px);
+    animation: fadeIn 0.18s ease;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.lightbox-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6);
+    animation: popIn 0.22s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: default;
+}
+
+.lightbox-close {
+    position: fixed;
+    top: 20px;
+    right: 24px;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.18s;
+    z-index: 2001;
+}
+
+.lightbox-close:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
