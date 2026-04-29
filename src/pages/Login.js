@@ -113,7 +113,14 @@ const Login = () => {
         if (isLogin) {
             const existingUser = users.find(u => u.email === email);
             if (existingUser) {
-                login(existingUser);
+                const firstName = existingUser.name.split(' ')[0];
+                const expectedDefaultPassword = `${firstName}123`;
+                
+                if (password === existingUser.password || password === expectedDefaultPassword) {
+                    login(existingUser);
+                } else {
+                    setError('Incorrect password.');
+                }
             } else {
                 setError('User not found. Try registering.');
             }
@@ -155,6 +162,7 @@ const Login = () => {
                 id: `u${Date.now()}`,
                 name: fullName,
                 email,
+                password,
                 gender,
                 age: parseInt(age),
                 // Avatar is compressed to ≤200×200 px / ~10 KB before being stored

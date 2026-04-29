@@ -92,31 +92,11 @@ export const DataProvider = ({ children }) => {
     }, []);
 
     /**
-     * Strip base64 image data from objects before persisting to json-server.
-     * Base64 blobs balloon db.json (100s of KB per user) and cause crashes.
-     * Images are kept in React state for in-session display only.
+     * Images are now compressed on the client side before saving.
+     * We no longer strip base64 image data so that photos persist in db.json.
      */
     const sanitizePayload = (obj) => {
-        if (!obj || typeof obj !== 'object') return obj;
-        if (Array.isArray(obj)) {
-            return obj
-                .filter(v => !(typeof v === 'string' && v.startsWith('data:image/')))
-                .map(v => (typeof v === 'object' && v !== null ? sanitizePayload(v) : v));
-        }
-        const clean = {};
-        for (const key of Object.keys(obj)) {
-            const val = obj[key];
-            if (typeof val === 'string' && val.startsWith('data:image/')) {
-                clean[key] = null;
-            } else if (Array.isArray(val)) {
-                clean[key] = val.filter(v => !(typeof v === 'string' && v.startsWith('data:image/')));
-            } else if (typeof val === 'object' && val !== null) {
-                clean[key] = sanitizePayload(val);
-            } else {
-                clean[key] = val;
-            }
-        }
-        return clean;
+        return obj;
     };
 
     const persist = (endpoint, method, data) => {

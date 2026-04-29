@@ -8,7 +8,8 @@
       "intent": "admin",
       "avatar": null,
       "reputationScore": null,
-      "reputationTier": null
+      "reputationTier": null,
+      "password": "admin123"
     },
     {
       "id": "u1",
@@ -34,7 +35,8 @@
       "intent": "Serious relationship",
       "reputationScore": 92,
       "reputationTier": "Gold",
-      "avatar": "/photos/mikha.jpg"
+      "avatar": "/photos/mikha.jpg",
+      "password": "mikha123"
     },
     {
       "id": "u2",
@@ -59,7 +61,8 @@
       "intent": "Casual dating",
       "reputationScore": 78,
       "reputationTier": "Silver",
-      "avatar": "/photos/daniel.jpg"
+      "avatar": "/photos/daniel.jpg",
+      "password": "daniel123"
     },
     {
       "id": "u3",
@@ -85,7 +88,8 @@
       "intent": "Study buddy",
       "reputationScore": 98,
       "reputationTier": "Elite",
-      "avatar": "/photos/andrea.jpg"
+      "avatar": "/photos/andrea.jpg",
+      "password": "andrea123"
     },
     {
       "id": "u4",
@@ -111,7 +115,8 @@
       "intent": "Serious relationship",
       "reputationScore": 82,
       "reputationTier": "Silver",
-      "avatar": "/photos/dwight.jpg"
+      "avatar": "/photos/dwight.jpg",
+      "password": "dwight123"
     },
     {
       "id": "u5",
@@ -137,7 +142,8 @@
       "intent": "Event companion",
       "reputationScore": 65,
       "reputationTier": "Bronze",
-      "avatar": "/photos/liza.jpg"
+      "avatar": "/photos/liza.jpg",
+      "password": "liza123"
     },
     {
       "id": "u6",
@@ -163,7 +169,8 @@
       "intent": "Study buddy",
       "reputationScore": 88,
       "reputationTier": "Gold",
-      "avatar": "/photos/joshua.jpg"
+      "avatar": "/photos/joshua.jpg",
+      "password": "joshua123"
     },
     {
       "id": "u7",
@@ -189,7 +196,8 @@
       "intent": "Serious relationship",
       "reputationScore": 95,
       "reputationTier": "Elite",
-      "avatar": "/photos/sabrina.jpg"
+      "avatar": "/photos/sabrina.jpg",
+      "password": "sabrina123"
     },
     {
       "id": "u8",
@@ -215,7 +223,8 @@
       "intent": "Serious relationship",
       "reputationScore": 85,
       "reputationTier": "Gold",
-      "avatar": "/photos/brian.jpg"
+      "avatar": "/photos/brian.jpg",
+      "password": "brian123"
     },
     {
       "id": "u9",
@@ -241,7 +250,8 @@
       "intent": "Study buddy",
       "reputationScore": 91,
       "reputationTier": "Gold",
-      "avatar": "/photos/clairo.jpg"
+      "avatar": "/photos/clairo.jpg",
+      "password": "clairo123"
     },
     {
       "id": "u10",
@@ -267,7 +277,8 @@
       "intent": "Casual dating",
       "reputationScore": 60,
       "reputationTier": "Bronze",
-      "avatar": "/photos/donny.jpg"
+      "avatar": "/photos/donny.jpg",
+      "password": "donny123"
     },
     {
       "id": "u11",
@@ -293,7 +304,8 @@
       "intent": "Event companion",
       "reputationScore": 70,
       "reputationTier": "Silver",
-      "avatar": "/photos/sara.jpg"
+      "avatar": "/photos/sara.jpg",
+      "password": "sara123"
     },
     {
       "id": "u12",
@@ -319,7 +331,37 @@
       "intent": "Study buddy",
       "reputationScore": 89,
       "reputationTier": "Gold",
-      "avatar": "/photos/marlon.jpg"
+      "avatar": "/photos/marlon.jpg",
+      "password": "marlon123"
+    },
+    {
+      "id": "u1777457280706",
+      "name": "Josh Mojica",
+      "email": "josh_mojica@dlsl.edu.ph",
+      "password": "josh123",
+      "gender": "Male",
+      "age": 23,
+      "avatar": null,
+      "additionalPhotos": [],
+      "role": "user",
+      "reputationScore": 50,
+      "reputationTier": "Bronze",
+      "intent": "Serious relationship",
+      "bio": "awdasda",
+      "course": "Bachelor of Secondary Education",
+      "year": 1,
+      "subjects": [
+        "AWDASD",
+        "AW",
+        "AWD"
+      ],
+      "gpaGoal": "",
+      "interests": [
+        "awdasda",
+        "awdas",
+        "awda",
+        "d"
+      ]
     }
   ],
   "matches": [
@@ -700,6 +742,11 @@
       "id": "l_1777455483137",
       "from": "u8",
       "to": "u5"
+    },
+    {
+      "id": "l_1777457328338",
+      "from": "u11",
+      "to": "u1777457280706"
     }
   ]
 }

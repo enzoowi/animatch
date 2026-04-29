@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useData } from '../context/DataContext';
-import { Pencil, BookOpen, Clock, MapPin, Plus, X } from 'lucide-react';
+import { Pencil, BookOpen, Clock, MapPin, Plus, X, Camera } from 'lucide-react';
 import './Profile.css';
 
 const tierColors = {
@@ -18,6 +18,7 @@ const Profile = () => {
     const [isEditing, setIsEditing] = useState(false);
     const [selectedPhoto, setSelectedPhoto] = useState(null);
     const fileInputRef = useRef(null);
+    const avatarInputRef = useRef(null);
 
     const compressImage = (dataUrl, maxPx = 600, quality = 0.6) =>
         new Promise((resolve) => {
@@ -47,6 +48,21 @@ const Profile = () => {
         }
         if (fileInputRef.current) {
             fileInputRef.current.value = '';
+        }
+    };
+
+    const handleAvatarSelect = (e) => {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onloadend = async () => {
+                const compressed = await compressImage(reader.result, 200);
+                updateProfile({ avatar: compressed });
+            };
+            reader.readAsDataURL(file);
+        }
+        if (avatarInputRef.current) {
+            avatarInputRef.current.value = '';
         }
     };
     const [form, setForm] = useState(() => ({
@@ -111,10 +127,22 @@ const Profile = () => {
             <div className="profile-page-card">
                 {/* Avatar & basic identity */}
                 <div className="profile-page-avatar-wrap">
-                    <img
-                        src={user.avatar || `https://i.pravatar.cc/150?u=${user.id}`}
-                        alt={user.name}
-                        className="profile-page-avatar"
+                    <div className="profile-page-avatar-container" onClick={() => avatarInputRef.current?.click()} title="Change Profile Photo">
+                        <img
+                            src={user.avatar || `https://i.pravatar.cc/150?u=${user.id}`}
+                            alt={user.name}
+                            className="profile-page-avatar"
+                        />
+                        <div className="profile-avatar-overlay">
+                            <Camera size={24} color="#ffffff" />
+                        </div>
+                    </div>
+                    <input 
+                        type="file" 
+                        accept="image/*" 
+                        ref={avatarInputRef} 
+                        onChange={handleAvatarSelect} 
+                        style={{ display: 'none' }} 
                     />
                     <div className="profile-page-tier-badge" style={{ background: tierColor }}>
                         {academicRep.label} · {academicRep.score}
